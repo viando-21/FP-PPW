@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- Meta tag untuk karakter encoding dan responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaleChic - Fashion Pria Modern</title>
+    
+    <!-- Import library CSS eksternal -->
+    <!-- Bootstrap untuk styling dan layout responsive -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome untuk icon-icon -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- CSS kustom untuk styling tambahan -->
+    <link rel="stylesheet" href="pants.css">
+</head>
+<body>
+    <!-- ============================== -->
+    <!-- BAGIAN NAVIGASI (NAVBAR) -->
+    <!-- ============================== -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-cream sticky-top shadow-sm">
+        <div class="container">
+            <!-- Logo/Brand Website -->
+            <a class="navbar-brand brand-text" href="#">
+                <i class="fas fa-male me-2 text-gold"></i><span class="text-gold">Male</span>Chic
+            </a>
+            
+            <!-- Tombol toggle untuk mobile menu (hamburger menu) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Menu navigasi utama -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Menu navigasi di tengah -->
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="Homepage.html">Beranda</a>
+                    </li>
+                    <!-- Dropdown menu untuk kategori produk -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button" data-bs-toggle="dropdown">
+                            Kategori
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="T-shirt.html">T-Shirt</a></li>
+                            <li><a class="dropdown-item" href="shirt.html">Shirt</a></li>
+                            <li><a class="dropdown-item" href="Pants.html">Pants</a></li>
+                            <li><a class="dropdown-item" href="Outerware.html">Outerwear</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="#products">Produk</a>
+                       
+                </ul>
+                
+                <!-- Tombol aksi di kanan navbar (search, wishlist, cart) -->
+                <div class="d-flex gap-2">
+                    <!-- Tombol pencarian -->
+                    <button class="btn btn-outline-brown btn-sm">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <!-- Tombol wishlist/favorit -->
+                    <button class="btn btn-outline-brown btn-sm">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                    <!-- Tombol keranjang belanja dengan badge counter -->
+                    <button class="btn btn-outline-brown btn-sm position-relative">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            0
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="products" class="py-5">
+        <div class="container">
+            <!-- Header section -->
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-brown-dark mb-3">PANTS</h2>
+                <div class="section-divider"></div>
+                <p class="lead text-muted">Pants pilihan dengan kualitas terbaik</p>
+            </div>
+            
+            <!-- Grid produk unggulan (4 kolom) -->
+            <div class="row g-4">
+                <!-- Produk 1: Premium Cotton T-Shirt -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <!-- Placeholder untuk gambar produk -->
+                        <div class="product-image-placeholder d-flex align-items-center justify-content-center">
+                            <img src="pants 1.jpeg" class="img-fluid rounded" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-brown-dark">Woolver Tartan Pants Regular Black</h5>
+                            <p class="card-text text-muted small">Celana regular fit bermotif tartan ini dirancang untuk menghadirkan gaya formal</p>
+                            <!-- Area harga dan tombol beli -->
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-gold fw-bold mb-0">Rp 349.000</span>
+                                <button class="btn btn-brown btn-sm">
+                                    <i class="fas fa-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Produk 2: Formal Shirt -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="product-image-placeholder d-flex align-items-center justify-content-center">
+                            <img src="pants 2.jpeg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-brown-dark">Regvyn Pants Dark Taupe</h5>
+                            <p class="card-text text-muted small">Regvyn Pants merupakan pasangan yang sempurna untuk Regvyn Shirt.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-gold fw-bold mb-0">Rp 339.000</span>
+                                <button class="btn btn-brown btn-sm">
+                                    <i class="fas fa-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Produk 3: Chino Pants -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="product-image-placeholder d-flex align-items-center justify-content-center">
+                            <img src="pants 3.jpeg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-brown-dark">Easefit Pants Ankle Black</h5>
+                            <p class="card-text text-muted small">Celana panjang ankle yang bisa digunakan acara formal dan non-formal</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-gold fw-bold mb-0">Rp 299.000</span>
+                                <button class="btn btn-brown btn-sm">
+                                    <i class="fas fa-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produk 4: Chino Pants -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="product-image-placeholder d-flex align-items-center justify-content-center">
+                            <img src="pants 4.jpeg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-brown-dark">Easefit Pants Ankle Cream</h5>
+                            <p class="card-text text-muted small">Celana panjang ankle yang bisa digunakan acara formal</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-gold fw-bold mb-0">Rp 299.000</span>
+                                <button class="btn btn-brown btn-sm">
+                                    <i class="fas fa-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produk 5: Chino Pants -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="product-image-placeholder d-flex align-items-center justify-content-center">
+                            <img src="pants 5.jpeg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-brown-dark">Easefit Pants Ankle BROWN</h5>
+                            <p class="card-text text-muted small">Celana panjang ankle yang bisa digunakan acara formal</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-gold fw-bold mb-0">Rp 299.000</span>
+                                <button class="btn btn-brown btn-sm">
+                                    <i class="fas fa-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Produk 6: Chino Pants -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="product-image-placeholder d-flex align-items-center justify-content-center">
+                            <img src="pants 6.jpeg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-brown-dark">Easefit Pants Ankle GREY</h5>
+                            <p class="card-text text-muted small">Celana panjang ankle yang bisa digunakan acara formal</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-gold fw-bold mb-0">Rp 299.000</span>
+                                <button class="btn btn-brown btn-sm">
+                                    <i class="fas fa-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Produk 7: Chino Pants -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="product-image-placeholder d-flex align-items-center justify-content-center">
+                            <img src="pants 7.jpeg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-brown-dark">Easefit Pants Ankle WHITE</h5>
+                            <p class="card-text text-muted small">Celana panjang ankle yang bisa digunakan acara formal</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-gold fw-bold mb-0">Rp 299.000</span>
+                                <button class="btn btn-brown btn-sm">
+                                    <i class="fas fa-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Produk 8: Chino Pants -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="product-image-placeholder d-flex align-items-center justify-content-center">
+                            <img src="pants 8.jpeg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-brown-dark">Easefit Pants Ankle OLIVE</h5>
+                            <p class="card-text text-muted small">Celana panjang ankle yang bisa digunakan acara formal</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-gold fw-bold mb-0">Rp 299.000</span>
+                                <button class="btn btn-brown btn-sm">
+                                    <i class="fas fa-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Produk 9: Chino Pants -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="product-image-placeholder d-flex align-items-center justify-content-center">
+                            <img src="pants 9.jpeg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-brown-dark">Archie Pants Navy</h5>
+                            <p class="card-text text-muted small">Celana yang dapat dikenakan pada saat acara formal</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-gold fw-bold mb-0">Rp 299.000</span>
+                                <button class="btn btn-brown btn-sm">
+                                    <i class="fas fa-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================== -->
+    <!-- BAGIAN FOOTER -->
+    <!-- ============================== -->
+    <footer class="bg-brown-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Kolom 1: Info perusahaan dan social media -->
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="fas fa-male me-2 text-gold"></i><span class="text-gold">Male</span>Chic
+                    </h5>
+                    <p class="text-light">
+                        Platform fashion pria terdepan di Indonesia yang menghadirkan koleksi up to date dan elegant 
+                        untuk pria modern yang ingin tampil percaya diri.
+                    </p>
+                    <!-- Social media icons -->
+                    <div class="d-flex">
+                        <a href="#" class="btn btn-outline-light social-icon d-flex align-items-center justify-content-center me-2">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light social-icon d-flex align-items-center justify-content-center">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Kolom 2: Menu kategori -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-3 text-gold">Kategori</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="tshirt.html" class="text-decoration-none text-light">T-Shirt</a></li>
+                        <li class="mb-2"><a href="shirt.html" class="text-decoration-none text-light">Kemeja</a></li>
+                        <li class="mb-2"><a href="Pants.html" class="text-decoration-none text-light">Celana</a></li>
+                        <li class="mb-2"><a href="Outerware.html" class="text-decoration-none text-light">Outerwear</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Kolom 3: Menu layanan -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-3 text-gold">Layanan</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-light">Bantuan</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-light">Panduan Ukuran</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-light">Kebijakan Return</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-light">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Kolom 4: Informasi kontak -->
+                <div class="col-lg-4 mb-4 ">
+                    <h5 class="fw-bold mb-3 text-gold">Kontak</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2 d-flex align-items-center">
+                            <i class="fas fa-phone me-2 text-gold"></i>
+                            <span class="text-light">+62 821-8550-0388</span>
+                        </li>
+                        <li class="mb-2 d-flex align-items-center">
+                            <i class="fas fa-envelope me-2 text-gold"></i>
+                            <span class="text-light">MaleChic@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Garis pemisah -->
+            <hr class="my-4 border-secondary">
+            
+            <!-- Footer bottom dengan copyright dan legal links -->
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 text-light">&copy; 2025 MaleChic. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-decoration-none text-light me-3">Privacy Policy</a>
+                    <a href="#" class="text-decoration-none text-light me-3">Terms of Service</a>
+                    <a href="#" class="text-decoration-none text-light">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- ============================== -->
+    <!-- IMPORT JAVASCRIPT LIBRARIES -->
+    <!-- ============================== -->
+    <!-- Bootstrap JavaScript untuk interaktivitas komponen -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script> 
+    
+    <!-- ============================== -->
+    <!-- JAVASCRIPT KUSTOM -->
+    <!-- ============================== -->
+    <script>
+        // ==========================================
+        // FITUR 1: SMOOTH SCROLLING
+        // ==========================================
+        // Fungsi untuk membuat scroll halus ketika mengklik link anchor
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault(); // Mencegah default behavior
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    // Scroll ke target dengan animasi halus
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // ==========================================
+        // FITUR 2: FUNGSI KERANJANG BELANJA
+        // ==========================================
+        // Menambahkan event listener ke semua tombol "tambah ke keranjang"
+        document.querySelectorAll('.btn .fa-cart-plus').forEach(button => {
+            button.parentElement.addEventListener('click', function(e) {
+                e.preventDefault(); // Mencegah redirect
+                
+                // Animasi perubahan tombol saat diklik
+                this.classList.remove('btn-brown');
+                this.classList.add('btn-success');
+                this.innerHTML = '<i class="fas fa-check"></i>'; // Ganti icon menjadi centang
+                
+                // Reset tombol ke kondisi semula setelah 2 detik
+                setTimeout(() => {
+                    this.classList.remove('btn-success');
+                    this.classList.add('btn-brown');
+                    this.innerHTML = '<i class="fas fa-cart-plus"></i>';
+                }, 2000);
+                
+                // Update counter pada badge keranjang
+                const badge = document.querySelector('.badge');
+                if (badge) {
+                    badge.textContent = parseInt(badge.textContent) + 1;
+                }
+            });
+        });
+
+        // ==========================================
+        // FITUR 3: ANIMASI SCROLL UNTUK CARDS
+        // ==========================================
+        // Menggunakan Intersection Observer API untuk animasi saat scroll
+        const cards = document.querySelectorAll('.card');
+        
+        // Observer untuk mendeteksi ketika card masuk ke viewport
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Animasi fade-in dan slide-up ketika card terlihat
+                    entry.target.style.transform = 'translateY(0)';
+                    entry.target.style.opacity = '1';
+                }
+            });
+        });
+
+        // Setup initial state dan observe semua cards
+        cards.forEach(card => {
+            // Set kondisi awal card (tersembunyi dan sedikit ke bawah)
+            card.style.transform = 'translateY(20px)';
+            card.style.opacity = '0';
+            card.style.transition = 'all 0.6s ease'; // Durasi animasi
+            
+            // Mulai observasi card
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>

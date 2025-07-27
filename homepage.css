@@ -1,0 +1,166 @@
+/* ===== VARIABEL WARNA UTAMA ===== */
+/* Sistem warna terpadu untuk konsistensi di seluruh website */
+:root {
+    --dark-brown: #3c2415;    /* Cokelat tua - untuk teks utama dan elemen penting */
+    --medium-brown: #5d4037;  /* Cokelat sedang - untuk tombol dan aksen */
+    --light-brown: #795548;   /* Cokelat muda - untuk background sekunder */
+    --cream: #f5f5dc;         /* Krem - untuk background terang dan kontras */
+    --gold: #d4af37;          /* Emas - untuk highlight dan elemen premium */
+}
+
+/* ===== BACKGROUND COMPONENTS ===== */
+/* Background gradient untuk section hero/banner utama */
+.hero-bg {
+    background: linear-gradient(135deg, var(--dark-brown) 0%, var(--medium-brown) 100%);
+}
+.hero-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+/* ===== TYPOGRAPHY ===== */
+/* Styling khusus untuk teks brand/logo perusahaan */
+.brand-text {
+    font-weight: 700;                    /* Bold untuk penekanan */
+    font-size: 1.8rem;                   /* Ukuran besar untuk visibility */
+    color: var(--dark-brown) !important; /* Warna cokelat tua untuk keterbacaan */
+}
+
+/* ===== DECORATIVE ELEMENTS ===== */
+/* Garis pembatas horizontal antar section */
+.section-divider {
+    width: 80px;                    /* Lebar tetap untuk konsistensi */
+    height: 4px;                    /* Ketebalan yang cukup terlihat */
+    background: var(--medium-brown); /* Warna cokelat sedang */
+    margin: 0 auto 2rem;            /* Center alignment dengan margin bawah */
+    border-radius: 2px;             /* Sudut sedikit melengkung */
+}
+
+
+/* ===== PRODUCT DISPLAY ===== */
+/* Placeholder untuk gambar produk dengan gradient lembut */
+.product-image-placeholder {
+    height: 250px; /* Tinggi konsisten untuk semua gambar */
+    overflow: hidden;
+    background: linear-gradient(45deg, var(--cream), #e8dcc6); /* Gradient cream */
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image-placeholder img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain; /* Atur agar gambar tidak terpotong dan tetap proporsional */
+}
+
+
+/* ===== SOCIAL MEDIA ===== */
+/* Styling untuk ikon media sosial */
+.social-icon {
+    width: 40px;       /* Ukuran standar untuk ikon sosial media */
+    height: 40px;      /* Membuat bentuk persegi */
+    border-radius: 50%; /* Membuat bentuk lingkaran sempurna */
+}
+
+/* ===== UTILITY CLASSES - BACKGROUND COLORS ===== */
+/* Background cokelat tua - untuk header, footer, atau elemen penting */
+.bg-brown-dark {
+    background-color: var(--dark-brown) !important;
+}
+
+/* Background cokelat sedang - untuk tombol dan section aksen */
+.bg-brown-medium {
+    background-color: var(--medium-brown) !important;
+}
+
+/* Background cokelat muda - untuk card dan container sekunder */
+.bg-brown-light {
+    background-color: var(--light-brown) !important;
+}
+
+/* Background cream - untuk kontras dan area konten utama */
+.bg-cream {
+    background-color: var(--cream) !important;
+}
+
+/* ===== UTILITY CLASSES - TEXT COLORS ===== */
+/* Warna teks cokelat tua - untuk heading dan teks penting */
+.text-brown-dark {
+    color: var(--dark-brown) !important;
+}
+
+/* Warna teks cokelat sedang - untuk subheading dan teks sekunder */
+.text-brown-medium {
+    color: var(--medium-brown) !important;
+}
+
+/* Warna teks emas - untuk highlight, harga, atau elemen premium */
+.text-gold {
+    color: var(--gold) !important;
+}
+
+/* ===== BUTTON COMPONENTS ===== */
+/* Tombol utama dengan background cokelat */
+.btn-brown {
+    background-color: var(--medium-brown); /* Background cokelat sedang */
+    border-color: var(--medium-brown);     /* Border matching background */
+    color: white;                          /* Teks putih untuk kontras */
+}
+
+/* Efek hover untuk tombol cokelat - berubah ke warna lebih gelap */
+.btn-brown:hover {
+    background-color: var(--dark-brown); /* Background jadi lebih gelap saat hover */
+    border-color: var(--dark-brown);     /* Border ikut berubah */
+    color: white;                        /* Teks tetap putih */
+}
+
+/* Tombol outline/border cokelat - untuk aksi sekunder */
+.btn-outline-brown {
+    border-color: var(--medium-brown); /* Border cokelat */
+    color: var(--medium-brown);        /* Teks cokelat */
+}
+
+/* Efek hover untuk tombol outline - background terisi saat hover */
+.btn-outline-brown:hover {
+    background-color: var(--medium-brown); /* Background terisi saat hover */
+    border-color: var(--medium-brown);     /* Border tetap sama */
+    color: white;                          /* Teks berubah putih */
+}
+
+
+
+/* ===== NAVIGATION BAR ===== */
+/* Styling untuk link navigation - warna default */
+.navbar-light .navbar-nav .nav-link {
+    color: var(--dark-brown) !important; /* Warna link cokelat tua */
+}
+
+/* Efek hover untuk link navigation */
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--medium-brown) !important; /* Warna berubah saat hover */
+}
+
+/* ===== ADDITIONAL UTILITIES ===== */
+/* Warna teks primary untuk konsistensi dengan tema */
+.text-brown-primary {
+    color: var(--medium-brown) !important;
+}
+
+/* Background gradient cokelat - untuk section khusus atau card premium */
+.bg-brown-gradient {
+    background: linear-gradient(135deg, var(--light-brown) 0%, var(--medium-brown) 100%);
+}
+
+/* ===== SECTION SPACING ===== */
+/* Padding atas untuk semua section - memberikan ruang yang konsisten */
+section- {
+    padding-top: 5rem; /* Jarak atas 5rem untuk semua section */
+}

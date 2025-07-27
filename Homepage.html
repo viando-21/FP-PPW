@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- Meta tag untuk karakter encoding dan responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaleChic - Fashion Pria Modern</title>
+    
+    <!-- Import library CSS eksternal -->
+    <!-- Bootstrap untuk styling dan layout responsive -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome untuk icon-icon -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- CSS kustom untuk styling tambahan -->
+    <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+    <!-- ============================== -->
+    <!-- BAGIAN NAVIGASI (NAVBAR) -->
+    <!-- ============================== -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-cream sticky-top shadow-sm">
+        <div class="container">
+            <!-- Logo/Brand Website -->
+            <a class="navbar-brand brand-text" href="#">
+                <i class="fas fa-male me-2 text-gold"></i><span class="text-gold">Male</span>Chic
+            </a>
+            
+            <!-- Tombol toggle untuk mobile menu (hamburger menu) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Menu navigasi utama -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Menu navigasi di tengah -->
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="Homepage.html">Beranda</a>
+                    </li>
+                    <!-- Dropdown menu untuk kategori produk -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button" data-bs-toggle="dropdown">
+                            Kategori
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="T-shirt.html">T-Shirt</a></li>
+                            <li><a class="dropdown-item" href="shirt.html">Shirt</a></li>
+                            <li><a class="dropdown-item" href="Pants.html">Pants</a></li>
+                            <li><a class="dropdown-item" href="Outerware.html">Outerwear</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="#products">Produk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="#about">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="#contact">Kontak</a>
+                    </li>
+                </ul>
+                
+                <!-- Tombol aksi di kanan navbar (search, wishlist, cart) -->
+                <div class="d-flex gap-2">
+                    <!-- Tombol pencarian -->
+                    <button class="btn btn-outline-brown btn-sm">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <!-- Tombol wishlist/favorit -->
+                    <button class="btn btn-outline-brown btn-sm">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                    <!-- Tombol keranjang belanja dengan badge counter -->
+                    <button class="btn btn-outline-brown btn-sm position-relative">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            0
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- ============================== -->
+    <!-- BAGIAN HERO/BANNER UTAMA -->
+    <!-- ============================== -->
+    <section id="home" class="bg-brown-gradient text-white py-5">
+        <div class="container py-5">
+            <div class="row align-items-center min-vh-100 g-4">
+                <div class="col-lg-6 col-md-12">
+                    <div class="text-center text-lg-start pe-lg-4">
+                        <h1 class="display-2 fw-bold mb-4">Fashion Pria Modern</h1>
+                        <p class="lead mb-4 text-white-50">
+                            Temukan koleksi fashion pria terbaru yang up to date dan elegan.
+                            Untuk pria yang ingin tampil percaya diri dalam setiap kesempatan.
+                        </p>
+                        
+                        <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
+                            <a href="#products" class="btn btn-light btn-lg rounded-pill px-4 py-3 fw-semibold text-brown-medium shadow-lg">
+                                <i class="fas fa-shopping-bag me-2"></i>Belanja Sekarang
+                            </a>
+                            <a href="#about" class="btn btn-outline-light btn-lg rounded-pill px-4 py-3 fw-semibold">
+                                <i class="fas fa-info-circle me-2"></i>Pelajari Lebih Lanjut
+                            </a>
+                        </div>
+                        
+                        <div class="row mt-5 text-center text-lg-start">
+                            <div class="col-4">
+                                <div class="h3 fw-bold text-gold mb-1">36+</div>
+                                <small class="text-white-50">Produk</small>
+                            </div>
+                            <div class="col-4">
+                                <div class="h3 fw-bold text-gold mb-1">999+</div>
+                                <small class="text-white-50">Pelanggan</small>
+                            </div>
+                            <div class="col-4">
+                                <div class="h3 fw-bold text-gold mb-1">4.99★</div>
+                                <small class="text-white-50">Rating</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 col-md-12">
+                    <div class="position-relative">
+                        <div id="fashionCarousel" class="carousel slide carousel-fade shadow-lg" data-bs-ride="carousel" data-bs-interval="3000">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#fashionCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                                <button type="button" data-bs-target="#fashionCarousel" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#fashionCarousel" data-bs-slide-to="2"></button>
+                            </div>
+                            
+                            <div class="carousel-inner rounded-4 overflow-hidden">
+                                <div class="carousel-item active">
+                                    <div class="ratio ratio-4x3">
+                                        <div class="bg-secondary d-flex align-items-center justify-content-center">
+                                           <img src="koleksi casual.png" alt="casual">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="fw-bold text-gold mb-2">Koleksi Casual</h5>
+                                        <p class="mb-0">Tampil santai dengan gaya yang elegan</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="ratio ratio-4x3">
+                                        <div class="bg-dark d-flex align-items-center justify-content-center">
+                                        <img src="Koleksi formal (2).jpeg" alt="formal">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="fw-bold text-gold mb-2">Koleksi Formal</h5>
+                                        <p class="mb-0">Tampil rapi dengan gaya yang elegan</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="ratio ratio-4x3">
+                                        <div class="bg-warning d-flex align-items-center justify-content-center">
+                                            <img src="Diskon.jpg" alt="diskon">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="fw-bold text-gold mb-2">Diskon Besar-besaran</h5>
+                                        <p class="mb-0">Ada banyak diskon yang meriah!!!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <button class="carousel-control-prev" type="button" data-bs-target="#fashionCarousel" data-bs-slide="prev">
+                                <div class="bg-dark bg-opacity-50 rounded-circle p-2">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </div>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#fashionCarousel" data-bs-slide="next">
+                                <div class="bg-dark bg-opacity-50 rounded-circle p-2">
+                                    <span class="carousel-control-next-icon"></span>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+               
+    <!-- ============================== -->
+    <!-- BAGIAN KATEGORI PRODUK -->
+    <!-- ============================== -->
+    <section class="py-5 bg-cream">
+        <div class="container">
+            <!-- Header section dengan judul dan deskripsi -->
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-brown-dark mb-3">Kategori Produk</h2>
+                <div class="section-divider"></div>
+                <p class="lead text-muted">Pilih kategori fashion sesuai kebutuhan Anda</p>
+            </div>
+            
+            <!-- Grid layout untuk kategori produk (4 kolom) -->
+            <div class="row g-4">
+                <!-- Kategori 1: T-Shirt -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body text-center p-4">
+                            <div class="text-brown-primary mb-3">
+                                <img src="tshirt.png" alt="T-shirt">
+                            </div>
+                            <h4 class="card-title fw-bold text-brown-dark">T-Shirt</h4>
+                            <p class="card-text text-muted">Koleksi kaos casual untuk gaya santai sehari-hari</p>
+                            <a href="tshirt.html" class="btn btn-outline-brown btn-sm">Lihat Koleksi</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Kategori 2: Shirt/Kemeja -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body text-center p-4">
+                            <div class="text-brown-primary mb-3">
+                                <img src="shirt.png" alt="Shirt">
+                            </div>
+                            <h4 class="card-title fw-bold text-brown-dark">shirt</h4>
+                            <p class="card-text text-muted">Kemeja formal dan kasual untuk berbagai acara</p>
+                            <a href="shirt.html" class="btn btn-outline-brown btn-sm">Lihat Koleksi</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Kategori 3: Celana -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body text-center p-4">
+                            <div class="text-brown-primary mb-3">
+                              <img src="trousers.png" alt="Pants">
+                            </div>
+                            <h4 class="card-title fw-bold text-brown-dark">Pants</h4>
+                            <p class="card-text text-muted">Berbagai jenis celana dari formal hingga casual</p>
+                            <a href="Pants.html" class="btn btn-outline-brown btn-sm">Lihat Koleksi</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Kategori 4: Outerwear -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body text-center p-4">
+                            <div class="text-brown-primary mb-3">
+                                <img src="clothes.png" alt="Outerwear">
+                            </div>
+                            <h4 class="card-title fw-bold text-brown-dark">Outerwear</h4>
+                            <p class="card-text text-muted">Jaket dan outer untuk melengkapi penampilan</p>
+                            <a href="Outerware.html" class="btn btn-outline-brown btn-sm">Lihat Koleksi</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================== -->
+    <!-- BAGIAN PRODUK UNGGULAN -->
+    <!-- ============================== -->
+    <section id="products" class="py-5">
+        <div class="container">
+            <!-- Header section -->
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-brown-dark mb-3">Produk Unggulan</h2>
+                <div class="section-divider"></div>
+                <p class="lead text-muted">Koleksi terpilih dengan kualitas terbaik</p>
+            </div>
+            
+            <!-- Grid produk unggulan (4 kolom) -->
+            <div class="row g-4">
+                <!-- Produk 1: Premium Cotton T-Shirt -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <!-- Placeholder untuk gambar produk -->
+                        <div class="product-image-placeholder d-flex align-items-center justify-content-center">
+                            <img src="tshirt4.webp" class="img-fluid rounded" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-brown-dark">Verine Oversized Black Tee</h5>
+                            <p class="card-text text-muted small">Kaos oversized berwarna hitam dengan desain minimalis dan cutting yang longgar untuk kenyamanan maksimal.</p>
+                            <!-- Area harga dan tombol beli -->
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-gold fw-bold mb-0">Rp 155.000</span>
+                                <button class="btn btn-brown btn-sm">
+                                    <i class="fas fa-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Produk 2: Formal Shirt -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="product-image-placeholder d-flex align-items-center justify-content-center">
+                            <img src="foto1.webp" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-brown-dark">Delvine Textured Cuban Shirt black</h5>
+                            <p class="card-text text-muted small">Kemeja bertekstur yang dapat digunakan sehari-hari dan digunakan saat berkumpul saat hari raya.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-gold fw-bold mb-0">Rp 259.000</span>
+                                <button class="btn btn-brown btn-sm">
+                                    <i class="fas fa-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Produk 3: Chino Pants -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="product-image-placeholder d-flex align-items-center justify-content-center">
+                            <img src="pants 10.jpeg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-brown-dark">Walden Houndstood Ankle Pants Black White</h5>
+                            <p class="card-text text-muted small">Celana mata kaki dengan bahan poliester dengan motif houndstooth, menampilkan kesan yang elegant. </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-gold fw-bold mb-0">Rp 329.000</span>
+                                <button class="btn btn-brown btn-sm">
+                                    <i class="fas fa-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Produk 4: Denim Jacket -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="product-image-placeholder d-flex align-items-center justify-content-center">
+                            <img src="outerware 10.jpeg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-brown-dark">Tucx Denim Contrast Jacket Black</h5>
+                            <p class="card-text text-muted small">A Trucker jacket with contrast stitching detail Can be washed by washing machine</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-gold fw-bold mb-0">Rp 349.000</span>
+                                <button class="btn btn-brown btn-sm">
+                                    <i class="fas fa-cart-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+ <!-- BAGIAN PANDUAN UKURAN DENGAN TABEL -->
+ <section id="size-guide" class="py-5 bg-cream">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold text-brown-dark mb-3">Panduan Ukuran</h2>
+            <div class="section-divider"></div>
+            <p class="lead text-muted">Temukan ukuran yang tepat untuk Anda</p>
+        </div>
+        
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <!-- Tabs untuk kategori ukuran -->
+                <ul class="nav nav-pills nav-justified mb-4" id="sizeGuideTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active fw-semibold" id="tops-tab" data-bs-toggle="pill" data-bs-target="#tops" type="button" role="tab">
+                            <i class="fas fa-tshirt me-2"></i>Atasan (T-Shirt & Kemeja)
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link fw-semibold" id="bottoms-tab" data-bs-toggle="pill" data-bs-target="#bottoms" type="button" role="tab">
+                            <i class="fas fa-user-alt me-2"></i>Bawahan (Celana)
+                        </button>
+                    </li>
+                </ul>
+                
+                <!-- Tab content -->
+                <div class="tab-content" id="sizeGuideTabContent">
+                    <!-- Tab Atasan -->
+                    <div class="tab-pane fade show active" id="tops" role="tabpanel">
+                        <div class="card shadow border-0">
+                            <div class="card-body p-0">
+                                <div class="table-responsive">
+                                    <table class="table size-guide-table mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th>Ukuran</th>
+                                                <th>Lingkar Dada (cm)</th>
+                                                <th>Panjang Badan (cm)</th>
+                                                <th>Lebar Bahu (cm)</th>
+                                                <th>Panjang Lengan (cm)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="fw-semibold text-brown-dark">S</td>
+                                                <td>88-92</td>
+                                                <td>68-70</td>
+                                                <td>42-44</td>
+                                                <td>58-60</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fw-semibold text-brown-dark">M</td>
+                                                <td>96-100</td>
+                                                <td>70-72</td>
+                                                <td>44-46</td>
+                                                <td>60-62</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fw-semibold text-brown-dark">L</td>
+                                                <td>104-108</td>
+                                                <td>72-74</td>
+                                                <td>46-48</td>
+                                                <td>62-64</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fw-semibold text-brown-dark">XL</td>
+                                                <td>112-116</td>
+                                                <td>74-76</td>
+                                                <td>48-50</td>
+                                                <td>64-66</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fw-semibold text-brown-dark">XXL</td>
+                                                <td>120-124</td>
+                                                <td>76-78</td>
+                                                <td>50-52</td>
+                                                <td>66-68</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tab Bawahan -->
+                    <div class="tab-pane fade" id="bottoms" role="tabpanel">
+                        <div class="card shadow border-0">
+                            <div class="card-body p-0">
+                                <div class="table-responsive">
+                                    <table class="table size-guide-table mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th>Ukuran</th>
+                                                <th>Lingkar Pinggang (cm)</th>
+                                                <th>Lingkar Pinggul (cm)</th>
+                                                <th>Panjang Celana (cm)</th>
+                                                <th>Panjang Kaki (cm)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="fw-semibold text-brown-dark">28</td>
+                                                <td>70-74</td>
+                                                <td>88-92</td>
+                                                <td>100-102</td>
+                                                <td>76-78</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fw-semibold text-brown-dark">30</td>
+                                                <td>74-78</td>
+                                                <td>92-96</td>
+                                                <td>102-104</td>
+                                                <td>78-80</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fw-semibold text-brown-dark">32</td>
+                                                <td>78-82</td>
+                                                <td>96-100</td>
+                                                <td>104-106</td>
+                                                <td>80-82</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fw-semibold text-brown-dark">34</td>
+                                                <td>82-86</td>
+                                                <td>100-104</td>
+                                                <td>106-108</td>
+                                                <td>82-84</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fw-semibold text-brown-dark">36</td>
+                                                <td>86-90</td>
+                                                <td>104-108</td>
+                                                <td>108-110</td>
+                                                <td>84-86</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tips pengukuran -->
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <div class="card border-0 bg-light h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-ruler fa-3x text-brown-primary mb-3"></i>
+                                <h5 class="fw-bold text-brown-dark">Tips Mengukur</h5>
+                                <p class="text-muted small">Gunakan meteran jahit untuk hasil yang akurat. Ukur dalam keadaan tubuh rileks dan tidak memakai pakaian tebal.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card border-0 bg-light h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-question-circle fa-3x text-brown-primary mb-3"></i>
+                                <h5 class="fw-bold text-brown-dark">Butuh Bantuan?</h5>
+                                <p class="text-muted small">Masih bingung dengan ukuran? Hubungi customer service kami untuk konsultasi gratis mengenai ukuran yang tepat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- ============================== -->
+    <!-- BAGIAN KEUNGGULAN/FITUR -->
+    <!-- ============================== -->
+    <section id="about" class="py-5 bg-cream">
+        <div class="container">
+            <!-- Header section -->
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-brown-dark mb-3">Mengapa Memilih Malechic?</h2>
+                <div class="section-divider"></div>
+                <p class="lead text-muted">Keunggulan yang membuat kami berbeda</p>
+            </div>
+            
+            <!-- Grid fitur/keunggulan (4 kolom) -->
+            <div class="row g-4">
+                <!-- Fitur 1: Kualitas Premium -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center p-4">
+                        <div class="text-brown-primary mb-3">
+                            <i class="fas fa-star fa-3x"></i>
+                        </div>
+                        <h5 class="fw-bold text-brown-dark">Kualitas Premium</h5>
+                        <p class="text-muted">Bahan berkualitas tinggi dengan standar internasional</p>
+                    </div>
+                </div>
+                
+                <!-- Fitur 2: Pengiriman Cepat -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center p-4">
+                        <div class="text-brown-primary mb-3">
+                            <i class="fas fa-shipping-fast fa-3x"></i>
+                        </div>
+                        <h5 class="fw-bold text-brown-dark">Pengiriman Cepat</h5>
+                        <p class="text-muted">Pengiriman ke seluruh Indonesia dengan jaminan aman</p>
+                    </div>
+                </div>
+                
+                <!-- Fitur 3: Garansi 29 Hari -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center p-4">
+                        <div class="text-brown-primary mb-3">
+                            <i class="fas fa-undo fa-3x"></i>
+                        </div>
+                        <h5 class="fw-bold text-brown-dark">29 Hari Garansi</h5>
+                        <p class="text-muted">Jaminan pengembalian jika tidak sesuai ekspektasi</p>
+                    </div>
+                </div>
+                
+                <!-- Fitur 4: Customer Support -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center p-4">
+                        <div class="text-brown-primary mb-3">
+                            <i class="fas fa-headset fa-3x"></i>
+                        </div>
+                        <h5 class="fw-bold text-brown-dark">Customer Support</h5>
+                        <p class="text-muted">Tim support yang siap membantu 24/7</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================== -->
+    <!-- BAGIAN CALL-TO-ACTION KONTAK -->
+    <!-- ============================== -->
+    <section id="contact" class="bg-brown-gradient text-white py-5 pt-10">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="display-5 fw-bold mb-4">Siap Upgrade Gaya Fashion Anda?</h2>
+                    <p class="lead mb-4">
+                        Bergabunglah dengan ribuan pria yang sudah mempercayai MaleChic untuk tampil lebih percaya diri
+                    </p>
+                    <!-- Tombol CTA -->
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <a href="#products" class="btn btn-light btn-lg text-brown-dark">
+                            <i class="fas fa-shopping-bag me-2"></i>Mulai Belanja
+                        </a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-phone me-2"></i>Hubungi Kami
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+      <!-- FORM KONTAK -->
+    <section id="contact-form" class="py-5 bg-cream">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-brown-dark mb-3">Hubungi Kami</h2>
+                <hr class="w-25 mx-auto border-3 border-gold">
+                <p class="lead text-muted">Kami siap membantu Anda dengan layanan terbaik</p>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow border-0">
+                        <div class="card-body p-5">
+                            <form id="contactForm" class="needs-validation" novalidate>
+                                <div class="row g-3">
+                                    <!-- Nama Lengkap -->
+                                    <div class="col-md-6">
+                                        <label for="fullName" class="form-label">Nama Lengkap <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" id="fullName" required minlength="3">
+                                        <div class="invalid-feedback">
+                                            Nama lengkap minimal 3 karakter.
+                                        </div>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Email -->
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                                        <input type="email" class="form-control" id="email" required>
+                                        <div class="invalid-feedback">
+                                            Masukkan email yang valid.
+                                        </div>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Nomor Telepon -->
+                                    <div class="col-md-6">
+                                        <label for="phone" class="form-label">Nomor Telepon <span class="text-danger">*</span></label>
+                                        <input type="tel" class="form-control" id="phone" pattern="[0-9]{10,13}" required>
+                                        <div class="invalid-feedback">
+                                            Masukkan nomor telepon yang valid (10-13 digit).
+                                        </div>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Kategori Pertanyaan -->
+                                    <div class="col-md-6">
+                                        <label for="category" class="form-label">Kategori Pertanyaan <span class="text-danger">*</span></label>
+                                        <select class="form-select" id="category" required>
+                                            <option value="">Pilih kategori...</option>
+                                            <option value="produk">Pertanyaan Produk</option>
+                                            <option value="pemesanan">Pemesanan</option>
+                                            <option value="pengiriman">Pengiriman</option>
+                                            <option value="pengembalian">Pengembalian</option>
+                                            <option value="lainnya">Lainnya</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            Pilih kategori pertanyaan.
+                                        </div>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Pesan -->
+                                    <div class="col-12">
+                                        <label for="message" class="form-label">Pesan <span class="text-danger">*</span></label>
+                                        <textarea class="form-control" id="message" rows="5" required minlength="10"></textarea>
+                                        <div class="invalid-feedback">
+                                            Pesan minimal 10 karakter.
+                                        </div>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Terms & Conditions -->
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="terms" required>
+                                            <label class="form-check-label" for="terms">
+                                                Saya setuju dengan <a href="#" class="text-brown-medium">syarat dan ketentuan</a> yang berlaku. <span class="text-danger">*</span>
+                                            </label>
+                                            <div class="invalid-feedback">
+                                                Anda harus menyetujui syarat dan ketentuan.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Newsletter -->
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="newsletter">
+                                            <label class="form-check-label" for="newsletter">
+                                                Saya ingin menerima newsletter dan penawaran khusus
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Submit Button -->
+                                    <div class="col-12 text-center">
+                                        <button class="btn btn-brown btn-lg px-5" type="submit">
+                                            <i class="fas fa-paper-plane me-2"></i>Kirim Pesan
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                            
+                            <!-- Success Alert (Hidden by default) -->
+                            <div class="alert alert-success alert-dismissible fade show mt-4 d-none" id="successAlert" role="alert">
+                                <i class="fas fa-check-circle me-2"></i>
+                                <strong>Terima kasih!</strong> Pesan Anda telah berhasil dikirim. Tim kami akan segera menghubungi Anda.
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================== -->
+    <!-- BAGIAN FOOTER -->
+    <!-- ============================== -->
+    <footer class="bg-brown-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Kolom 1: Info perusahaan dan social media -->
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="fas fa-male me-2 text-gold"></i><span class="text-gold">Male</span>Chic
+                    </h5>
+                    <p class="text-light">
+                        Platform fashion pria terdepan di Indonesia yang menghadirkan koleksi up to date dan elegant 
+                        untuk pria modern yang ingin tampil percaya diri.
+                    </p>
+                    <!-- Social media icons -->
+                    <div class="d-flex">
+                        <a href="#" class="btn btn-outline-light social-icon d-flex align-items-center justify-content-center me-2">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light social-icon d-flex align-items-center justify-content-center">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Kolom 2: Menu kategori -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-3 text-gold">Kategori</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="tshirt.html" class="text-decoration-none text-light">T-Shirt</a></li>
+                        <li class="mb-2"><a href="shirt.html" class="text-decoration-none text-light">Kemeja</a></li>
+                        <li class="mb-2"><a href="Pants.html" class="text-decoration-none text-light">Celana</a></li>
+                        <li class="mb-2"><a href="Outerware.html" class="text-decoration-none text-light">Outerwear</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Kolom 3: Menu layanan -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-3 text-gold">Layanan</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-light">Bantuan</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-light">Panduan Ukuran</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-light">Kebijakan Return</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-light">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Kolom 4: Informasi kontak -->
+                <div class="col-lg-4 mb-4 ">
+                    <h5 class="fw-bold mb-3 text-gold">Kontak</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2 d-flex align-items-center">
+                            <i class="fas fa-phone me-2 text-gold"></i>
+                            <span class="text-light">+62 821-8550-0388</span>
+                        </li>
+                        <li class="mb-2 d-flex align-items-center">
+                            <i class="fas fa-envelope me-2 text-gold"></i>
+                            <span class="text-light">MaleChic@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Garis pemisah -->
+            <hr class="my-4 border-secondary">
+            
+            <!-- Footer bottom dengan copyright dan legal links -->
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 text-light">&copy; 2025 MaleChic. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-decoration-none text-light me-3">Privacy Policy</a>
+                    <a href="#" class="text-decoration-none text-light me-3">Terms of Service</a>
+                    <a href="#" class="text-decoration-none text-light">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- ============================== -->
+    <!-- JAVASCRIPT -->
+    <!-- ============================== -->
+    <!-- Bootstrap JavaScript untuk interaktivitas komponen -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script> 
+    
+    <!-- ============================== -->
+    <!-- JAVASCRIPT KUSTOM -->
+    <!-- ============================== -->
+    <script>
+        // ==========================================
+        // FITUR 1: SMOOTH SCROLLING
+        // ==========================================
+        // Fungsi untuk membuat scroll halus ketika mengklik link anchor
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault(); // Mencegah default behavior
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    // Scroll ke target dengan animasi halus
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // ==========================================
+        // FITUR 2: FUNGSI KERANJANG BELANJA
+        // ==========================================
+        // Menambahkan event listener ke semua tombol "tambah ke keranjang"
+        document.querySelectorAll('.btn .fa-cart-plus').forEach(button => {
+            button.parentElement.addEventListener('click', function(e) {
+                e.preventDefault(); // Mencegah redirect
+                
+                // Animasi perubahan tombol saat diklik
+                this.classList.remove('btn-brown');
+                this.classList.add('btn-success');
+                this.innerHTML = '<i class="fas fa-check"></i>'; // Ganti icon menjadi centang
+                
+                // Reset tombol ke kondisi semula setelah 2 detik
+                setTimeout(() => {
+                    this.classList.remove('btn-success');
+                    this.classList.add('btn-brown');
+                    this.innerHTML = '<i class="fas fa-cart-plus"></i>';
+                }, 2000);
+                
+                // Update counter pada badge keranjang
+                const badge = document.querySelector('.badge');
+                if (badge) {
+                    badge.textContent = parseInt(badge.textContent) + 1;
+                }
+            });
+        });
+
+        // ==========================================
+        // FITUR 3: ANIMASI SCROLL UNTUK CARDS
+        // ==========================================
+        // Menggunakan Intersection Observer API untuk animasi saat scroll
+        const cards = document.querySelectorAll('.card');
+        
+        // Observer untuk mendeteksi ketika card masuk ke viewport
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Animasi fade-in dan slide-up ketika card terlihat
+                    entry.target.style.transform = 'translateY(0)';
+                    entry.target.style.opacity = '1';
+                }
+            });
+        });
+
+        // Setup initial state dan observe semua cards
+        cards.forEach(card => {
+            // Set kondisi awal card (tersembunyi dan sedikit ke bawah)
+            card.style.transform = 'translateY(20px)';
+            card.style.opacity = '0';
+            card.style.transition = 'all 0.6s ease'; // Durasi animasi
+            
+            // Mulai observasi card
+            observer.observe(card);
+        });
+          // Form validation and handling
+          class ContactFormValidator {
+            constructor(formId) {
+                this.form = document.getElementById(formId);
+                this.submitBtn = document.getElementById('submitBtn');
+                this.successAlert = document.getElementById('successAlert');
+                this.errorAlert = document.getElementById('errorAlert');
+                this.errorMessage = document.getElementById('errorMessage');
+                this.messageCount = document.getElementById('messageCount');
+                
+                this.init();
+            }
+            
+            init() {
+                // Add event listeners
+                this.form.addEventListener('submit', this.handleSubmit.bind(this));
+                
+                // Real-time validation for each field
+                this.addFieldValidation();
+                
+                // Message character counter
+                this.addMessageCounter();
+                
+                // Phone number formatting
+                this.addPhoneFormatting();
+            }
+            
+            addFieldValidation() {
+                const fields = this.form.querySelectorAll('input, select, textarea');
+                
+                fields.forEach(field => {
+                    // Validate on blur (when user leaves field)
+                    field.addEventListener('blur', () => {
+                        this.validateField(field);
+                    });
+                    
+                    // Validate on input for immediate feedback
+                    field.addEventListener('input', () => {
+                        if (field.classList.contains('is-invalid') || field.classList.contains('is-valid')) {
+                            this.validateField(field);
+                        }
+                    });
+                });
+            }
+            
+            validateField(field) {
+                const isValid = this.checkFieldValidity(field);
+                
+                if (isValid) {
+                    field.classList.remove('is-invalid');
+                    field.classList.add('is-valid');
+                } else {
+                    field.classList.remove('is-valid');
+                    field.classList.add('is-invalid');
+                }
+                
+                return isValid;
+            }
+            
+            checkFieldValidity(field) {
+                // Basic HTML5 validation
+                if (!field.checkValidity()) {
+                    return false;
+                }
+                
+                // Custom validation rules
+                switch (field.id) {
+                    case 'fullName':
+                        return field.value.trim().length >= 3 && /^[a-zA-Z\s]+$/.test(field.value.trim());
+                    
+                    case 'email':
+                        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                        return emailRegex.test(field.value.trim());
+                    
+                    case 'phone':
+                        const phoneRegex = /^[0-9]{10,13}$/;
+                        const cleanPhone = field.value.replace(/\D/g, '');
+                        return phoneRegex.test(cleanPhone);
+                    
+                    case 'message':
+                        return field.value.trim().length >= 10 && field.value.trim().length <= 500;
+                    
+                    default:
+                        return field.checkValidity();
+                }
+            }
+            
+            addMessageCounter() {
+                const messageField = document.getElementById('message');
+                
+                messageField.addEventListener('input', () => {
+                    const count = messageField.value.length;
+                    this.messageCount.textContent = count;
+                    
+                    // Change color based on character count
+                    if (count > 450) {
+                        this.messageCount.className = 'text-danger fw-bold';
+                    } else if (count > 400) {
+                        this.messageCount.className = 'text-warning fw-bold';
+                    } else {
+                        this.messageCount.className = 'text-muted';
+                    }
+                });
+            }
+            
+            addPhoneFormatting() {
+                const phoneField = document.getElementById('phone');
+                
+                phoneField.addEventListener('input', (e) => {
+                    // Allow only numbers
+                    let value = e.target.value.replace(/\D/g, '');
+                    
+                    // Limit to 13 digits
+                    if (value.length > 13) {
+                        value = value.slice(0, 13);
+                    }
+                    
+                    e.target.value = value;
+                });
+            }
+            
+            validateForm() {
+                let isValid = true;
+                const fields = this.form.querySelectorAll('input[required], select[required], textarea[required]');
+                
+                fields.forEach(field => {
+                    if (!this.validateField(field)) {
+                        isValid = false;
+                    }
+                });
+                
+                return isValid;
+            }
+            
+            showLoading(show = true) {
+                const loadingSpinner = this.submitBtn.querySelector('.loading-spinner');
+                const submitText = this.submitBtn.querySelector('.submit-text');
+                
+                if (show) {
+                    loadingSpinner.style.display = 'inline';
+                    submitText.style.display = 'none';
+                    this.submitBtn.disabled = true;
+                } else {
+                    loadingSpinner.style.display = 'none';
+                    submitText.style.display = 'inline';
+                    this.submitBtn.disabled = false;
+                }
+            }
+            
+            showAlert(type, message = '') {
+                // Hide all alerts first
+                this.successAlert.classList.add('d-none');
+                this.errorAlert.classList.add('d-none');
+                
+                if (type === 'success') {
+                    this.successAlert.classList.remove('d-none');
+                    this.successAlert.classList.add('pulse-animation');
+                    
+                    // Scroll to alert
+                    this.successAlert.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                } else if (type === 'error') {
+                    if (message) {
+                        this.errorMessage.textContent = message;
+                    }
+                    this.errorAlert.classList.remove('d-none');
+                    
+                    // Scroll to alert
+                    this.errorAlert.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+            }
+            
+            resetForm() {
+                this.form.reset();
+                
+                // Remove validation classes
+                const fields = this.form.querySelectorAll('.is-valid, .is-invalid');
+                fields.forEach(field => {
+                    field.classList.remove('is-valid', 'is-invalid');
+                });
+                
+                // Reset message counter
+                this.messageCount.textContent = '0';
+                this.messageCount.className = 'text-muted';
+            }
+            
+            async handleSubmit(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                
+                // Hide previous alerts
+                this.showAlert('hide');
+                
+                // Validate form
+                if (!this.validateForm()) {
+                    this.showAlert('error', 'Mohon lengkapi semua field yang wajib diisi dengan benar.');
+                    return;
+                }
+                
+                // Show loading state
+                this.showLoading(true);
+                
+                try {
+                    // Simulate form submission
+                    await this.submitForm();
+                    
+                    // Show success message
+                    this.showAlert('success');
+                    
+                    // Reset form after successful submission
+                    setTimeout(() => {
+                        this.resetForm();
+                    }, 1000);
+                    
+                } catch (error) {
+                    this.showAlert('error', 'Terjadi kesalahan saat mengirim pesan. Silakan coba lagi.');
+                    console.error('Form submission error:', error);
+                } finally {
+                    this.showLoading(false);
+                }
+            }
+            
+            async submitForm() {
+                // Simulate API call
+                return new Promise((resolve, reject) => {
+                    setTimeout(() => {
+                        // Simulate random success/failure for demo
+                        if (Math.random() > 0.1) { // 90% success rate
+                            resolve({ success: true });
+                        } else {
+                            reject(new Error('Server error'));
+                        }
+                    }, 2000); // Simulate 2 second delay
+                });
+            }
+        }
+        
+        // Initialize form validator when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            new ContactFormValidator('contactForm');
+            
+            // Add some nice animations
+            const formCard = document.querySelector('.card');
+            formCard.style.opacity = '0';
+            formCard.style.transform = 'translateY(30px)';
+            
+            setTimeout(() => {
+                formCard.style.transition = 'all 0.6s ease';
+                formCard.style.opacity = '1';
+                formCard.style.transform = 'translateY(0)';
+            }, 100);
+        });
+        
+        // Add some interactive enhancements
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth focus transitions
+            const inputs = document.querySelectorAll('input, select, textarea');
+            
+            inputs.forEach(input => {
+                input.addEventListener('focus', function() {
+                    this.parentElement.style.transform = 'scale(1.02)';
+                    this.parentElement.style.transition = 'transform 0.2s ease';
+                });
+                
+                input.addEventListener('blur', function() {
+                    this.parentElement.style.transform = 'scale(1)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

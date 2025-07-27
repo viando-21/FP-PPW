@@ -1,0 +1,110 @@
+/* ===== VARIABEL WARNA UTAMA ===== */
+:root {
+    --dark-brown: #3c2415;
+    --medium-brown: #5d4037;
+    --light-brown: #795548;
+    --cream: #f5f5dc;
+    --gold: #d4af37;
+}
+
+/* ===== TYPOGRAPHY ===== */
+.brand-text {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: var(--dark-brown) !important;
+}
+
+/* ===== DECORATIVE ELEMENTS ===== */
+.section-divider {
+    width: 80px;
+    height: 4px;
+    background: var(--medium-brown);
+    margin: 0 auto 2rem;
+    border-radius: 2px;
+}
+
+/* ===== PRODUCT DISPLAY ===== */
+/* Placeholder untuk gambar produk dengan gradient lembut */
+.product-image-placeholder {
+    height: 200px;                                      /* Tinggi standar untuk konsistensi */
+    background: linear-gradient(45deg, var(--cream), #e8dcc6); /* Gradient cream untuk efek visual */
+}
+
+body {
+    background-color: white;
+}
+
+.product-image-placeholder {
+    height: 250px;
+    overflow: hidden;
+    background-color: #f8f8f8;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image-placeholder img {
+    max-height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+
+/* ===== SOCIAL MEDIA ===== */
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* ===== UTILITY CLASSES - BACKGROUND COLORS ===== */
+.bg-brown-dark {
+    background-color: var(--dark-brown) !important;
+}
+
+.bg-cream {
+    background-color: var(--cream) !important;
+}
+
+/* ===== UTILITY CLASSES - TEXT COLORS ===== */
+.text-brown-dark {
+    color: var(--dark-brown) !important;
+}
+
+.text-gold {
+    color: var(--gold) !important;
+}
+
+/* ===== BUTTON COMPONENTS ===== */
+.btn-brown {
+    background-color: var(--medium-brown);
+    border-color: var(--medium-brown);
+    color: white;
+}
+
+.btn-brown:hover {
+    background-color: var(--dark-brown);
+    border-color: var(--dark-brown);
+    color: white;
+}
+
+.btn-outline-brown {
+    border-color: var(--medium-brown);
+    color: var(--medium-brown);
+}
+
+.btn-outline-brown:hover {
+    background-color: var(--medium-brown);
+    border-color: var(--medium-brown);
+    color: white;
+}
+
+/* ===== NAVIGATION BAR ===== */
+.navbar-light .navbar-nav .nav-link {
+    color: var(--dark-brown) !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--medium-brown) !important;
+}
